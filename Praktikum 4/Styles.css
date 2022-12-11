@@ -1,0 +1,202 @@
+:root {
+	--bg: #333;
+  --bg2: rgb(154, 149, 149);
+	--font-color: whitesmoke;
+	--text : "☀ Light Mode"
+}
+
+.dark-theme {
+	--bg: black;
+  --bg2: rgb(154, 149, 149);
+	--font-color: #333;
+	--text: "☽ Dark Mode"
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+    vertical-align: baseline;
+  }
+
+  .header {
+    background-color: var(--font-color);
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.1fr;
+    font-size: large;
+  }
+
+  body{
+    background-color: var(--font-color);
+  }
+
+  h1 {
+    font-size:4vw;
+  }
+
+  mark {
+    background-color: var(--font-color);
+    color: var(--bg2);
+  }
+
+  .headerText {
+    font-size: 2vw;
+    margin-top: 10%;
+  }
+  
+  img {
+    width: 100%;
+    display: flex;
+  }
+
+  a {
+    color: var(--font-color);
+    font-style: normal;
+    text-decoration: none;
+    margin-inline: 20px;
+    padding: 5px;
+  }
+
+  .nav {
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  h2 {
+    background-color: var(--bg);
+    color: var(--font-color);
+    width: fit-content;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container1 {
+    color: var(--font-color);
+    display: flex;
+    flex-direction:row;
+    margin: 15px;
+    justify-content: center;
+  }
+  
+  .paragraf1 {
+    background-color: var(--bg2);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .video {
+    margin-inline: 2vw;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #tabel_riwayat_pendidikan {
+    border-color: var(--bg);
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+
+  td {
+    width: fit-content;
+    text-align: center;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: var(--bg);
+  }
+  
+  th {
+    background-color: var(--bg2);
+    color: var(--font-color);
+    border-color: var(--bg);
+    width: fit-content;
+    text-align: center;
+    padding-inline: 50px;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: var(--bg);
+  }
+
+  #nama_sekolah{
+    text-align: left;
+    padding-inline: 5px;
+  }
+
+  .container3 {
+    background-color: var(--bg2);
+    color: var(--font-color);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+  }
+  
+  #tabel_kontak {
+    border: 0px;
+    text-align: left;
+  }
+
+  #medsos {
+    font-style: normal;
+    text-decoration: none;
+    margin-inline: 0px;
+    padding: 0px;
+  }
+
+  footer {
+    background-color: var(--bg);
+    color:  var(--font-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .btn {
+    background-color: var(--bg);
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--font-color);
+  }
+  
+  .btn:hover {
+    background-color: var(--bg2);
+  }
+  
+  .theme::before {
+    color: var(--font-color);
+    content: var(--text);
+  }
+
+  @media(max-width: 640px) {
+    .nav {
+      flex-direction: column;
+    }
+  
+    .container1 {
+      flex-direction: column;
+    }
+
+    .video {
+      margin-top: 2vh;
+    }
+
+    .container3 {
+      padding: 10px;
+    }
+
+    th {
+      padding-inline: 25px;
+    }
+  }
