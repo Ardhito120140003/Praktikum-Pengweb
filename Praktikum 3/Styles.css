@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+    vertical-align: baseline;
+  }
+
+  .header {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    font-size: large;
+  }
+
+  h1 {
+    font-size:4vw;
+  }
+
+  mark {
+    background-color: white;
+    color: rgb(154, 149, 149);
+  }
+
+  .headerText {
+    font-size: 2vw;
+    margin-top: 10%;
+  }
+  
+  img {
+    width: 100%;
+    display: flex;
+  }
+
+  a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    margin-inline: 20px;
+    padding: 5px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #333;
+  }
+  
+  h2 {
+    background-color: #333;
+    width: fit-content;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container1 {
+    display: flex;
+    flex-direction:row;
+    margin: 15px;
+    justify-content: center;
+    color: white;
+  }
+  
+  .paragraf1 {
+    background-color: rgb(154, 149, 149);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .video {
+    margin-inline: 2vw;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #tabel_riwayat_pendidikan {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: #333;
+  }
+
+  td {
+    width: fit-content;
+    text-align: center;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: #333;
+  }
+  
+  th {
+    background-color: rgb(154, 149, 149);
+    width: fit-content;
+    text-align: center;
+    padding-inline: 50px;
+    color: white;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: #333;
+  }
+
+  #nama_sekolah{
+    text-align: left;
+    padding-inline: 5px;
+  }
+
+  .container3 {
+    background-color: rgb(154, 149, 149);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    color: white;
+  }
+  
+  #tabel_kontak {
+    border: 0px;
+    text-align: left;
+  }
+
+  #medsos {
+    font-style: normal;
+    text-decoration: none;
+    margin-inline: 0px;
+    padding: 0px;
+  }
+
+  footer {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color:  white;
+    font-weight: bold;
+  }
+
+  @media(max-width: 640px) {
+    .nav {
+      flex-direction: column;
+    }
+  
+    .container1 {
+      flex-direction: column;
+    }
+
+    .video {
+      margin-top: 2vh;
+    }
+
+    .container3 {
+      padding: 10px;
+    }
+
+    th {
+      padding-inline: 25px;
+    }
+  }
