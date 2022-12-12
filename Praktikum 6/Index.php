@@ -28,5 +28,4 @@ function ConvertToRoman($num){
 } 
 
 echo ConvertToRoman(1141); 
-echo " ";
 ?>
